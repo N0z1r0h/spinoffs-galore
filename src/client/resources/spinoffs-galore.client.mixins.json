@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "n0z1r0h.spinoff_galore.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
