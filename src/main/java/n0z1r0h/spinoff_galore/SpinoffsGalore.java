@@ -1,5 +1,6 @@
 package n0z1r0h.spinoff_galore;
 
+import n0z1r0h.spinoff_galore.Registry.BlockRegistry;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class SpinoffsGalore implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		BlockRegistry.init();
 
 		LOGGER.info("Hello Fabric world!");
 	}
