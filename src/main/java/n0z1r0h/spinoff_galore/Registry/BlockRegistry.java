@@ -24,4 +24,6 @@ public class BlockRegistry {
         }
         return Registry.register(Registries.BLOCK, blockKey, block);
     }
+
+    
 }
