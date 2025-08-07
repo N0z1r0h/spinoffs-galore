@@ -14,7 +14,8 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class BlockRegistry {
-    public static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
+    private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory,
+                            AbstractBlock.Settings settings, boolean shouldRegisterItem) {
         RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SpinoffsGalore.MOD_ID, name));
         Block block = blockFactory.apply(settings.registryKey(blockKey));
         if(shouldRegisterItem) {
