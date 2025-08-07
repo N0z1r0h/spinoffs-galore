@@ -14,4 +14,8 @@ public class EntityRegistry {
         RegistryKey<EntityType<?>> key = RegistryKey.of(RegistryKeys.ENTITY_TYPE, Identifier.of(SpinoffsGalore.MOD_ID, name));
         return Registry.register(Registries.ENTITY_TYPE, key, builder.build(key));
     }
+
+    public static void init() {
+        SpinoffsGalore.LOGGER.info("Attempting \"REGISTRATION\" of EntityTypes for mod: " + SpinoffsGalore.MOD_ID);
+    }
 }
